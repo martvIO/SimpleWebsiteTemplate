@@ -1,7 +1,3 @@
-Here's a revised README file for the `templates` folder that does not include a `base.html`:
-
----
-
 # 📁 `templates` Folder
 
 Welcome to the `templates` folder! This folder contains the HTML templates that your Flask application uses to render web pages dynamically. 🌟
@@ -29,49 +25,47 @@ Here's an example of what the structure of your `templates` folder might look li
 - These templates define the layout and content that users will see when they visit different parts of your site.
 - Example for `login.html`:
 
-
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Login</title>
     </head>
     <body>
-        <h2>Login</h2>
-        <form action="{{ url_for('auth.login') }}" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br>
-            <button type="submit">Login</button>
-        </form>
+      <h2>Login</h2>
+      <form action="{{ url_for('auth.login') }}" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /><br />
+        <button type="submit">Login</button>
+      </form>
     </body>
-    </html>
-    ```
+  </html>
+  ```
 
 ### 2. **Custom Error Pages**
 
 - To enhance user experience, you can create custom error pages like `404.html` or `500.html` to display friendly messages when something goes wrong.
 - Example for `404.html`:
 
-
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>404 - Page Not Found</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>404 - Page Not Found</title>
     </head>
     <body>
-        <h2>404 - Page Not Found</h2>
-        <p>Sorry, the page you are looking for does not exist.</p>
-        <a href="{{ url_for('views.home') }}">Go back to Home</a>
+      <h2>404 - Page Not Found</h2>
+      <p>Sorry, the page you are looking for does not exist.</p>
+      <a href="{{ url_for('views.home') }}">Go back to Home</a>
     </body>
-    </html>
-    ```
+  </html>
+  ```
 
 ### 3. **Reusable Components (Optional)**
 
