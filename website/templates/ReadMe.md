@@ -24,10 +24,12 @@ Here's an example of what the structure of your `templates` folder might look li
 ## 🚀 What to Add to This Folder
 
 ### 1. **Page-Specific Templates**
-   - Each view (route) in your Flask application corresponds to an HTML template. For example, you might have a `login.html` template for your login page and a `sign_up.html` template for your registration page.
-   - These templates define the layout and content that users will see when they visit different parts of your site.
-   - Example for `login.html`:
-   
+
+- Each view (route) in your Flask application corresponds to an HTML template. For example, you might have a `login.html` template for your login page and a `sign_up.html` template for your registration page.
+- These templates define the layout and content that users will see when they visit different parts of your site.
+- Example for `login.html`:
+
+
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -50,9 +52,11 @@ Here's an example of what the structure of your `templates` folder might look li
     ```
 
 ### 2. **Custom Error Pages**
-   - To enhance user experience, you can create custom error pages like `404.html` or `500.html` to display friendly messages when something goes wrong.
-   - Example for `404.html`:
-   
+
+- To enhance user experience, you can create custom error pages like `404.html` or `500.html` to display friendly messages when something goes wrong.
+- Example for `404.html`:
+
+
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -70,7 +74,8 @@ Here's an example of what the structure of your `templates` folder might look li
     ```
 
 ### 3. **Reusable Components (Optional)**
-   - If you have common elements like headers, footers, or navigation menus that are used across multiple pages, consider creating separate templates for them and including them in your main templates using Jinja2’s `{% include %}` feature.
+
+- If you have common elements like headers, footers, or navigation menus that are used across multiple pages, consider creating separate templates for them and including them in your main templates using Jinja2’s `{% include %}` feature.
 
 ## 💡 Tips
 
